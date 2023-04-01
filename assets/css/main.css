@@ -1,0 +1,121 @@
+:root {
+  --vh-bg-primary: #ffffff;
+  --vh-bg-secondary: #0b0b0b;
+
+  --vh-text-primary: #222222;
+  --vh-text-secondary: #7f858a;
+  --vh-text-light: #ffffff;
+
+  --vh-primary: #714afd;
+  --vh-primary-light: #9287e3;
+}
+
+.vh-bg-primary {
+  background-color: var(--vh-bg-primary);
+}
+
+.vh-bg-secondary {
+  background-color: var(--vh-bg-secondary);
+}
+
+.vh-text-primary {
+  color: var(--vh-text-primary);
+}
+
+.vh-text-secondary {
+  color: var(--vh-text-secondary);
+}
+
+.vh-text-light {
+  color: var(--vh-text-light);
+}
+
+.vh-badge {
+  background-color: var(--vh-bg-secondary) !important;
+  border: 1px solid var(--vh-bg-secondary) !important;
+  color: var(--vh-text-light) !important;
+  border-radius: 25px !important;
+}
+
+.heading {
+  font-size: 3rem !important;
+}
+
+.subheading {
+  font-size: 1.5rem !important;
+}
+
+.margin-y {
+  margin-top: 7rem;
+  margin-bottom: 10rem;
+}
+
+.bg-holder {
+  position: absolute;
+  background: linear-gradient(0deg, rgba(246, 241, 247, .08) 20%, rgba(236, 178, 255, .08) 45%, rgba(25, 4, 229, .08) 80%);
+  width: 100%;
+  height: 100vh;
+  top: -100px;
+  left: 0;
+  background-size: cover;
+  background-position: center;
+  backface-visibility: hidden;
+  background-repeat: no-repeat;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, var(--vh-primary) 0%, var(--vh-primary-light) 100%) !important;
+  border-width: 0;
+  border-radius: 5px;
+  color: var(--vh-text-light);
+  font-size: large;
+  font-weight: bold;
+  padding: 0.83rem;
+  padding-left: 3.5rem;
+  padding-right: 3.5rem;
+}
+
+video {
+  border-radius: 10px;
+}
+
+.card-gradient-1 {
+  background: linear-gradient(60deg,rgba(230,242,255,.7) 0,rgba(230,242,255,.7) 35%,rgba(242,242,251,.7) 100%);
+}
+
+.card-gradient-2 {
+  background: linear-gradient(60deg,rgba(235,241,255,.7) 0,rgba(244,241,250,.7) 35%,rgba(249, 239, 252, 0.7) 100%);
+}
+
+.card-gradient-3 {
+  background: linear-gradient(60deg,rgba(243,239,253,.7) 0,rgba(253, 238, 253, 0.7) 35%,rgba(252, 234, 255, 0.7) 100%);
+}
+
+.input-cursor {
+  width: 2px;
+  height: 30px;
+  background-color: var(--vh-text-primary);
+  margin-left: 1px;
+  padding-right: 5px;
+  animation: blink .6s linear infinite alternate;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+
+  40% {
+    opacity: 1;
+  }
+
+  60% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
