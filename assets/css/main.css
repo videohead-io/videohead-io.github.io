@@ -3,7 +3,7 @@
   --vh-bg-secondary: #0b0b0b;
 
   --vh-text-primary: #222222;
-  --vh-text-secondary: #7f858a;
+  --vh-text-secondary: #6d7376;
   --vh-text-light: #ffffff;
 
   --vh-primary: #714afd;
@@ -104,15 +104,12 @@ video {
   background: linear-gradient(60deg, rgba(235, 241, 255, .7) 0, rgba(244, 241, 250, .7) 35%, rgba(249, 239, 252, 0.7) 100%);
 }
 
-.card-gradient-3 {
-  background: linear-gradient(60deg, rgba(243, 239, 253, .7) 0, rgba(253, 238, 253, 0.7) 35%, rgba(252, 234, 255, 0.7) 100%);
-}
-
 .input-cursor {
   width: 2px;
   height: 30px;
   background-color: var(--vh-text-primary);
-  margin-left: 1px;
+  margin-right: 5px;
+  margin-left: -0.6rem;
   padding-right: 5px;
   animation: blink .6s linear infinite alternate;
 }
