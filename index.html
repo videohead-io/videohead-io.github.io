@@ -4,283 +4,375 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description"
-    content="Videohead is a video marketing tool that allows you to create promotional videos for your website quickly and easily.">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-  <link href="assets/css/main.css" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-  <link rel="icon" type="image/png" href="assets/img/favicon.png" sizes="32x32">
+
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico" sizes="32x32">
   <link rel="canonical" href="https://www.videohead.io">
-  <title>Videohead</title>
+  <title>Videohead - Effective promo videos in minutes</title>
+  <meta name="description"
+    content="Promo videos made easy. Captivate your audience and supercharge your content marketing strategy. Simple, speedy, streamlined.">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Videohead - Effective promo videos in minutes">
+  <meta property="og:description"
+    content="Promo videos made easy. Captivate your audience and supercharge your content marketing. Simple, speedy, streamlined.">
+  <meta property="og:image"
+    content="https://rahhifynaksnlrrgdorp.supabase.co/storage/v1/object/public/www-statics/og_image.png?t=2023-10-21T13%3A46%3A00.802Z">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Videohead - Effective promo videos in minutes.">
+  <meta name="twitter:description"
+    content="Promo videos made easy. Captivate your audience and supercharge your content marketing. Simple, speedy, streamlined.">
+  <meta name="twitter:image"
+    content="https://rahhifynaksnlrrgdorp.supabase.co/storage/v1/object/public/www-statics/og_image.png?t=2023-10-21T13%3A46%3A00.802Z">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link href="assets/css/main.css" rel="stylesheet" />
+  <link href="assets/css/reveal.css" rel="stylesheet" />
+
+  <!-- Analytics -->
   <script defer data-domain="videohead.io" src="https://analytics.videohead.io/js/script.js"></script>
-  <script>
-    if (!window.location.href.endsWith('/?lang=en')) {
-      if (/^es\b/.test(navigator.language || navigator.userLanguage)) {
-        window.location.href = "es";
-      }
-    }
-  </script>
 </head>
 
 <body class="vh-bg-primary">
-  <nav class="navbar navbar-expand-lg col-xxl-10 offset-xxl-1 col-lg-10 offset-lg-1 px-2">
-    <a class="navbar-brand" href="https://www.videohead.io">
-      <img src="assets/img/logo.svg" alt="Videohead" width="240" />
-    </a>
+  <nav class="container navbar navbar-expand-lg">
+    <div class="mt-4">
+      <a class="navbar-brand" href="https://www.videohead.io">
+        <img src="assets/img/logo.png" alt="Videohead" width="220" />
+      </a>
+    </div>
   </nav>
 
-  <section class="container-fluid text-center vh-text-primary mb-5 margin-y">
-    <div class="bg-holder"></div>
-
-    <div class="row mt-5 col-xl-10 offset-xl-1 align-items-center">
-      <div class="col-lg-6 text-center">
-        <div class="typing-container">
-          <h1 class="display-5 fw-bold mt-5 heading">
-            Your
-            <span id="type-text">web</span>
-            <span class="input-cursor"></span>
-            in video
-          </h1>
-        </div>
-        <p class="fs-6 fw-normal mt-4 subheading col-sm-8 offset-sm-2">
-          Optimize your product communication and captivate your audience easily.
-        </p>
-        <div class="col-auto mt-5 mb-4">
-          <a class="btn btn-primary position-relative" href="https://app.videohead.io">
-            Create a video now
-            <span class="position-absolute top-0 start-100 translate-middle badge rounded vh-badge">
-              Beta
-            </span>
-          </a>
-        </div>
+  <section class="container text-center vh-text-primary mt-3 mb-5 padding-y reveal">
+    <div class="row container">
+      <div class="col mx-5">
+        <h1 class="fw-bold heading">
+          Effective <span class="heading-em vh-color-secondary">promo videos</span> in minutes, not in hours
+        </h1>
       </div>
-
-      <div class="col-lg mb-5">
-        <div id="carousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-pause="false">
-          <div class="carousel-inner">
-            <div class="carousel-item active" data-bs-interval="7000">
-              <video width="100%" autoplay muted loop>
-                <source src="assets/media/xpanceo.mp4" type="video/mp4">
-              </video>
-            </div>
-            <div class="carousel-item" data-bs-interval="7000">
-              <video width="100%" autoplay muted loop>
-                <source src="assets/media/zenefits.mp4" type="video/mp4">
-              </video>
-            </div>
-            <div class="carousel-item" data-bs-interval="7000">
-              <video width="100%" muted loop preload="none">
-                <source src="assets/media/airpods.mp4" type="video/mp4">
-              </video>
-            </div>
-            <div class="carousel-item" data-bs-interval="7000">
-              <video width="100%" muted loop preload="none">
-                <source src="assets/media/aiken.mp4" type="video/mp4">
-              </video>
-            </div>
-            <div class="carousel-item" data-bs-interval="7000">
-              <video width="100%" muted loop preload="none">
-                <source src="assets/media/customer.mp4" type="video/mp4">
-              </video>
-            </div>
-            <div class="carousel-item" data-bs-interval="7000">
-              <video width="100%" muted loop preload="none">
-                <source src="assets/media/tldraw.mp4" type="video/mp4">
-              </video>
-            </div>
-            <div class="carousel-item" data-bs-interval="7000">
-              <video width="100%" muted loop preload="none">
-                <source src="assets/media/xpanceo2.mp4" type="video/mp4">
-              </video>
-            </div>
-            <div class="carousel-item" data-bs-interval="7000">
-              <video width="100%" muted loop preload="none">
-                <source src="assets/media/everylastdrop.mp4" type="video/mp4">
-              </video>
-            </div>
-          </div>
-        </div>
+      <p class="fw-light mt-4 subheading col-6 offset-3">
+        Easily captivate your audience and supercharge your content marketing strategy with Videohead.
+      </p>
+      <div class="mt-4 p-2">
+        <a class="btn btn-primary position-relative" href="https://app.videohead.io">
+          Get started now
+        </a>
+      </div>
+      <div class="mt-5">
+        <img style="max-width: 100%;" alt src="assets/img/hero.png" \>
       </div>
     </div>
   </section>
 
-  <section class="container-fluid text-center vh-text-light vh-bg-secondary margin-y">
-    <div class="row justify-content-center">
-      <div class="mb-5 mt-5">
-        <h1 class="fw-normal heading mt-5">Let the world see your product in action,<br>whatever it may be</span>
-        </h1>
-        <p class="fs-3 vh-text-secondary fw-normal mt-4 mb-5">
-          Videohead is the tool that helps you enhance your product's marketing strategy<br>through the communicative
-          power of video.
+  <section class="container text-center vh-text-primary padding-y">
+    <div class="row g-5 align-items-center reveal">
+      <div class="col pe-5">
+        <div class="feat-img">
+          <video src="assets/media/walktrough1.mp4" loading="lazy" autoplay muted loop>
+          </video>
+        </div>
+      </div>
+      <div class="col text-start">
+        <h2 class="h2-subheading fw-semibold">Spotlight features with <span class="h2-subheading-em">guided
+            walkthroughs</span></h2>
+        <p class="fw-light subheading mt-4">
+          Showcase specific features step-by-step for a comprehensive and impactful experience. Promote your product
+          like never before.
+        </p>
+      </div>
+    </div>
+
+    <div class="row g-5 align-items-center my-5 py-5 reveal">
+      <div class="col text-start">
+        <h2 class="h2-subheading fw-semibold">Get visibility with dynamic <span class="h2-subheading-em">product
+            showcases</span></h2>
+        <p class="fw-light subheading mt-4">
+          Generate dynamic, eye-catching showcase videos quickly. Engage your audience and elevate your brand presence
+          thanks to scroll-guided animations.
+        </p>
+      </div>
+      <div class="col">
+        <div class="feat-img">
+          <video src="assets/media/scroll1.mp4" loading="lazy" autoplay muted loop>
+          </video>
+        </div>
+      </div>
+    </div>
+
+    <div class="row g-5 align-items-center my-5 reveal">
+      <div class="col pe-5">
+        <div class="feat-img">
+          <video src="assets/media/cta1.mp4" loading="lazy" autoplay muted loop></video>
+        </div>
+      </div>
+      <div class="col text-start">
+        <h2 class="h2-subheading fw-semibold">Maximize impact with <span class="h2-subheading-em">compelling calls to
+            action</span>
+        </h2>
+        <p class="fw-light subheading mt-4">
+          Inspire action and drive conversions with ease. Turn passive viewers into active participants in your product
+          journey.
         </p>
       </div>
     </div>
   </section>
 
-  <section class="feat text-start vh-text-primary mt-5 mb-5 col-lg-10 offset-lg-1 col-xxl-8 offset-xxl-2 px-2">
-    <div class="container-fluid row align-items-center">
-      <div class="col-lg-5 col-sm-12">
-        <h1 class="mb-3">
-          One-click
-        </h1>
-        <p class="fs-4 vh-text-secondary fw-light mt-4 mb-5">
-          Videohead creates it for you, just the way you want it. Simply provide your website's address and let us make
-          a video that captures all the attention. It's that easy!
-        </p>
-      </div>
-      <div class="col-lg-7 col-sm-12 text-center mb-5">
-        <video width="80%" autoplay muted loop>
-          <source src="assets/media/cyclemon.mp4" type="video/mp4">
-        </video>
-      </div>
-  </section>
-
-  <section class="feat text-start vh-text-primary mt-5 mb-5 col-lg-10 offset-lg-1 col-xxl-8 offset-xxl-2 px-2">
-    <div class="container-fluid row align-items-center">
-      <div class="col-lg-5 col-sm-12">
-        <h1 class="mb-3">
-          Customizable
-        </h1>
-        <p class="fs-4 vh-text-secondary fw-light mt-4 mb-5">
-          Videohead gives you the option to customize your video with backgrounds that match the look and feel of your
-          website. Make your product stand out.
-        </p>
-      </div>
-      <div class="col-lg-7 col-sm-12 text-center mb-5">
-        <video width="80%" autoplay muted loop>
-          <source src="assets/media/fubiz.mp4" type="video/mp4">
-        </video>
-      </div>
-  </section>
-
-  <section class="feat text-start vh-text-primary mt-5 mb-5 col-lg-10 offset-lg-1 col-xxl-8 offset-xxl-2 px-2">
-    <div class="container-fluid row align-items-center">
-      <div class="col-lg-5 col-sm-12">
-        <h1 class="mb-3">
-          Ready to share
-        </h1>
-        <p class="fs-4 vh-text-secondary fw-light mt-4 mb-5">
-          Get your video in various formats and use it as you prefer. Share it on social media, use it on your landing
-          page or include it in your newsletter. Your video, your way.
-        </p>
-      </div>
-      <div class="col-lg-7 col-sm-12 text-center">
-        <video width="80%" autoplay muted loop>
-          <source src="assets/media/brandingo.mp4" type="video/mp4">
-        </video>
-      </div>
-  </section>
-
-  <section class="container-fluid text-center vh-text-primary align-items-center col-xl-10 offset-xl-1 margin-y">
-    <div class="row">
-      <h2 class="heading vh-text-tertiary mt-5">Experience the best of Videohead</h2>
-      <p class="fs-3 vh-text-secondary fw-normal mt-4 mb-5">
-        Get a professional video in a flash. No installation required.
+  <section class="container inline mt-3 mb-5 padding-y">
+    <div class="row mb-4 text-center reveal">
+      <h2 class="fw-semibold h2-heading">The best of <span class="h2-heading-em">Videohead</span></h2>
+      <p class="fw-light mt-4 subheading col-6 offset-3">
+        Most video editing tools work against you, than for you. Say goodbye to complex editing and hello to easy
+        video-creating experience.
       </p>
     </div>
-    <div class="row mt-5">
-      <div class="col-lg-6 col-md-12 col-sm-12 mt-5 mb-4 px-5">
-        <span class="text-decoration-none">
-          <div class="h-100 bg-extra-1 card-gradient-1">
-            <div class="p-xl-5 p-3">
-              <h3 class="pb-3 vh-text-primary title fw-normal vh-text-tertiary fs-3">
-                <p><i class="bi bi-clock-fill fs-1"></i></p>
-                Save time and optimize resources
-              </h3>
-            </div>
-          </div>
-        </span>
-      </div>
-      <div class="col-lg-6 col-md-12 col-sm-12 mt-5 mb-4 px-5">
-        <span class="text-decoration-none">
-          <div class="h-100 bg-extra-1 card-gradient-2">
-            <div class="p-xl-5 p-3">
-              <h3 class="pb-3 vh-text-primary title fw-normal vh-text-tertiary fs-3">
-                <p><i class="bi bi-hand-thumbs-up-fill fs-1"></i></p>
-                Boost your audience engagement
-              </h3>
-            </div>
-          </div>
-        </span>
-      </div>
-      <div class="col-lg-6 col-md-12 col-sm-12 mt-5 mb-4 px-5">
-        <span class="text-decoration-none">
-          <div class="h-100 bg-extra-1 card-gradient-1">
-            <div class="p-xl-5 p-3">
-              <h3 class="pb-3 vh-text-primary title fw-normal vh-text-tertiary fs-3">
-                <p><i class="bi bi-megaphone-fill fs-1"></i></p>
-                Enhance the communication of your product
-              </h3>
-            </div>
-          </div>
-        </span>
-      </div>
-      <div class="col-lg-6 col-md-12 col-sm-12 mt-5 mb-4 px-5">
-        <span class="text-decoration-none">
-          <div class="h-100 bg-extra-1 card-gradient-2">
-            <div class="p-xl-5 p-3">
-              <h3 class="pb-3 vh-text-primary title fw-normal vh-text-tertiary fs-3">
-                <p><i class="bi bi-eye-fill fs-1"></i></p>
-                Increase your brand visibility
-              </h3>
-            </div>
-          </div>
-        </span>
-      </div>
-    </div>
-  </section>
-
-  <section class="container-fluid vh-bg-secondary">
-    <div class="row text-center vh-text-light justify-content-center mt-2">
-      <div class="mb-5 mt-5">
-        <div class="h-100 bg-extra-1">
-          <div class="p-xl-5 p-3">
-            <h2 class="heading mb-5">We are ready to go</h2>
-            <p class="fs-3 fw-light mt-4">
-              Be one of the first to access our product.<br>Just one click away.
+    <div class="reveal">
+      <div class="row pt-5">
+        <div class="col mb-4">
+          <div class="px-5 py-5 text-start card">
+            <img src="assets/img/simple-icon.png" loading="lazy" alt="" class="card-image">
+            <span class="fs-2 fw-semibold">Simple</span>
+            <p class="fs-5 fw-light mt-3">
+              No editing expertise needed. Our user-friendly platform makes video creation a breeze.
             </p>
-            <a class="btn btn-primary position-relative mt-5" href="https://app.videohead.io">
-              Sign in now
-            </a>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="px-5 py-5 text-start card">
+            <img src="assets/img/speedy-icon.png" loading="lazy" alt="" class="card-image">
+            <span class="fs-2 fw-semibold">Speedy</span>
+            <p class="fs-5 fw-light mt-3">
+              No need to spend hours editing. We value your time and gets your video
+              ready in minutes.
+            </p>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="px-5 py-5 text-start card">
+            <img src="assets/img/streamlined-icon.png" loading="lazy" alt="" class="card-image">
+            <span class="fs-2 fw-semibold">Streamlined</span>
+            <p class="fs-5 fw-light mt-3">
+              No installation required. Just video creation from the moment you sign in to Videohead.
+            </p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="container-fluid vh-text-primary mt-2">
-    <div class="row text-center justify-content-center">
-      <p class="mt-3">Made with ♥ by Videohead team. Copyright ©
-        2023
-      </p>
+  <section class="container text-center vh-text-primary margin-y reveal">
+    <h2 class="fw-semibold h2-heading">Seeking <span class="h2-heading-em">more info?</span> It's right here</h2>
+    <div class="row gy-4 mt-5 pt-5">
+      <div class="faq-container">
+        <label class="faq-upper-container" for="faq-1">
+          <div class="faq-question-text">What is Videohead?</div>
+        </label>
+        <a class="faq-bottom-container">
+          <input class="faq-handle" type="radio" name="faq" id="faq-1">
+          <div class="faq-answer-text">
+            Videohead is an online tool for creating videos easily, even without prior video
+            editing experience. It's perfect for content marketers and content creators, highly useful for promoting
+            your projects, products, or websites of any kind of business.
+          </div>
+        </a>
+      </div>
+      <div class="faq-container">
+        <label class="faq-upper-container" for="faq-2">
+          <div class="faq-question-text">What types of videos can I create with Videohead?</div>
+        </label>
+        <a class="faq-bottom-container">
+          <input class="faq-handle" type="radio" name="faq" id="faq-2">
+          <div class="faq-answer-text">
+            You can create a wide variety of promo videos, including product showcases, demonstrations,
+            tutorials, product launchings, rebrandings, social media content and more!
+          </div>
+        </a>
+      </div>
+      <div class="faq-container">
+        <label class="faq-upper-container" for="faq-3">
+          <div class="faq-question-text">Can I try Videohead for free?</div>
+        </label>
+        <a class="faq-bottom-container">
+          <input class="faq-handle" type="radio" name="faq" id="faq-3">
+          <div class="faq-answer-text">
+            Yes, we're currently in beta, and we're offering Videohead for free so you can explore the tool and
+            determine if it suits your needs.
+          </div>
+        </a>
+      </div>
+      <div class="faq-container">
+        <label class="faq-upper-container" for="faq-4">
+          <div class="faq-question-text">How can I start using Videohead?</div>
+        </label>
+        <a class="faq-bottom-container">
+          <input class="faq-handle" type="radio" name="faq" id="faq-4">
+          <div class="faq-answer-text">
+            To begin using Videohead, simply register on our platform, choose the type of video you want to create, and
+            follow the on-screen instructions. It's easy and fast!
+          </div>
+        </a>
+      </div>
+      <div class="faq-container">
+        <label class="faq-upper-container" for="faq-5">
+          <div class="faq-question-text">I'm a content creator or content marketer, how can Videohead help me?</div>
+        </label>
+        <a class="faq-bottom-container">
+          <input class="faq-handle" type="radio" name="faq" id="faq-5">
+          <div class="faq-answer-text">
+            Videohead is your go-to easy video creation platform. If you're a content marketer or content creator,
+            you'll find it incredibly useful because you can quickly and effortlessly produce compelling videos for your
+            content marketing strategy.
+          </div>
+        </a>
+      </div>
+      <div class="faq-container">
+        <label class="faq-upper-container" for="faq-6">
+          <div class="faq-question-text">How can Videohead assist my video marketing strategy?</div>
+        </label>
+        <a class="faq-bottom-container">
+          <input class="faq-handle" type="radio" name="faq" id="faq-6">
+          <div class="faq-answer-text">
+            Videohead is specifically designed to make video marketing an integral part of your business strategy. Our
+            platform streamlines the video creation process, so also accelerates your marketing initiatives with
+            attention-grabbing content that not only stands out on social media platforms but also aligns perfectly with
+            growth marketing initiatives.
+          </div>
+        </a>
+      </div>
+      <div class="faq-container">
+        <label class="faq-upper-container" for="faq-7">
+          <div class="faq-question-text">Can I create videos for social media with Videohead?</div>
+        </label>
+        <a class="faq-bottom-container">
+          <input class="faq-handle" type="radio" name="faq" id="faq-7">
+          <div class="faq-answer-text">
+            Absolutely! Videohead is the perfect tool for creating social media videos. It enables you to generate
+            engaging video content for your social media platforms, such as short promotional clips or captivating
+            video stories. The best part is that you can choose the format that best fits each platform, whether it's
+            square, horizontal, or vertical.
+          </div>
+        </a>
+      </div>
+      <div class="faq-container">
+        <label class="faq-upper-container" for="faq-8">
+          <div class="faq-question-text">Can I create a tutorial video with Videohead?</div>
+        </label>
+        <a class="faq-bottom-container">
+          <input class="faq-handle" type="radio" name="faq" id="faq-8">
+          <div class="faq-answer-text">
+            That's right! Videohead is the best video editor for tutorials, making it easy for you to create and edit
+            video tutorials. You can utilize our walkthrough mode, and with just a few clicks, you'll be able to
+            generate a video tutorial. The best part is you don't need to install any applications, interacting with
+            our web platform is all you need to do.
+          </div>
+        </a>
+      </div>
+      <div class="faq-container">
+        <label class="faq-upper-container" for="faq-9">
+          <div class="faq-question-text">How can I use Videohead to promote a product launch?</div>
+        </label>
+        <a class="faq-bottom-container">
+          <input class="faq-handle" type="radio" name="faq" id="faq-9">
+          <div class="faq-answer-text">
+            Creating a product launch with Videohead is very straightforward. You just need to enter your website
+            address, choose the type of video you want, add a call to action, and you're ready to go!
+          </div>
+        </a>
+      </div>
+      <div class="faq-container">
+        <label class="faq-upper-container" for="faq-10">
+          <div class="faq-question-text">Is Videohead powered by AI?</div>
+        </label>
+        <a class="faq-bottom-container">
+          <input class="faq-handle" type="radio" name="faq" id="faq-10">
+          <div class="faq-answer-text">
+            We're currently in the process of enhancing Videohead with AI capabilities to make your experience even more
+            seamless and user-friendly. Stay tuned for updates on how our AI will simplify your video creation process.
+          </div>
+        </a>
+      </div>
     </div>
   </section>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+  <section class="container padding-y reveal">
+    <div class="vh-bg-secondary rounded-4">
+      <img src="assets/img/shape1.svg" alt class="bg cta-shape-1">
+      <img src="assets/img/shape2.svg" alt class="bg cta-shape-2">
+      <div class="row text-center vh-text-secondary">
+        <div class="mb-5 mt-5 pt-5 pb-5">
+          <div>
+            <div class="mx-5 px-5 py-4">
+              <h2 class="h2-subheading mb-5">Get early access to Videohead.<br>
+                <span class="vh-text-tertiary h2-subheading-em">
+                  Unleash the power of video.
+                </span>
+              </h2>
+              <a class="btn btn-secondary position-relative mt-2" href="https://app.videohead.io">
+                Sign in now
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container padding-y reveal" style="padding-bottom: 1rem !important;">
+    <div class="row">
+      <div class="col-4">
+        <a class="navbar-brand" href="https://www.videohead.io">
+          <img src="assets/img/logo.png" alt="Videohead" width="220" />
+        </a>
+        <p class="mt-4 vh-font-text fw-light fs-5">
+          Online video creation made easy. Swift. Stylish. Your promo, Perfected.
+        </p>
+      </div>
+      <div class="navigation col-2 offset-3 vh-font-text fw-light">
+        <div class="text-uppercase">Navigation</div>
+        <div class="mt-5">
+          <a href="/" class="text-decoration-none vh-text-primary">Homepage</a>
+        </div>
+      </div>
+      <div class="find-us col-3 vh-font-text">
+        <div class="text-uppercase">Find us</div>
+        <div class="mt-5">
+          <span>
+            <a href="https://www.twitter.com/videohead_io" target="_blank" class="fs-5 text-decoration-none">
+              <i class="bi bi-twitter-x vh-text-primary"></i>
+            </a>
+          </span>
+          <span class="ms-3">
+            <a href="https://www.linkedin.com/company/videohead-io" target="_blank"
+              class="fs-5 mr-5 text-decoration-none">
+              <i class="bi bi-linkedin vh-text-primary"></i>
+            </a>
+          </span>
+          <span class="ms-3">
+            <a href="mailto:hello@videohead.io" target="_blank" class="fs-5 mr-5 text-decoration-none">
+              <i class="bi bi-envelope-fill vh-text-primary"></i>
+            </a>
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <div class="row text-center justify-content-center mt-5">
+      <p>Made with ♥ by Videohead. © 2023</p>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>
-  <script src="https://code.jquery.com/jquery-3.6.3.min.js"
-    integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
-  <script src="assets/js/type.js"></script>
-  <script>
-    $(document).ready(async () => {
-      type(["landing", "blog", "branding", "e-commerce", "portfolio", "product", "web"], "#type-text");
-
-      const myCarousel = document.getElementById('carousel');
-      myCarousel.addEventListener('slid.bs.carousel', async (e) => {
-        const activeCarouselItem = document.getElementsByClassName('carousel-item active')[0];
-        const activeVideo = activeCarouselItem.children[0];
-        activeVideo.play();
-
-        const nextActiveItem = activeCarouselItem.nextElementSibling;
-        if (nextActiveItem) {
-          nextVideo = nextActiveItem.children[0];
-          nextVideo.preload = 'auto';
-        }
-      })
-    });
-  </script>
+  <script src="assets/js/reveal.js"></script>
 </body>
 
 </html>
