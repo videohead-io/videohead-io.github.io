@@ -220,6 +220,7 @@ video {
   max-width: 100%;
   height: auto;
   border-radius: 10px;
+  clip-path: inset(1px 1px);
 }
 
 .navigation a:hover,
@@ -238,4 +239,9 @@ video {
   width: 80px;
   height: 80px;
   margin-bottom: 32px;
+}
+
+.hero {
+  border: 15px solid rgba(0, 0, 0, 0.07);
+  border-radius: 30px;
 }
