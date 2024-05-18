@@ -245,3 +245,78 @@ video {
   border: 15px solid rgba(0, 0, 0, 0.07);
   border-radius: 30px;
 }
+
+.demo-form {
+  box-shadow: 0 10px 30px 0 rgba(83, 83, 83, 0.1);
+}
+
+.demo-form:hover {
+  -webkit-box-shadow: 0px 0px 30px 0px rgba(157, 0, 255, 0.2);
+  -moz-box-shadow: 0px 0px 30px 0px rgba(157, 0, 255, 0.2);
+  box-shadow: 0px 0px 30px 0px rgba(157, 0, 255, 0.2);
+}
+
+.demo-form-element,
+.demo-form-element-selected {
+  margin: 5px;
+  border-radius: 15px;
+  background-color: #fff;
+  border: 1px solid #f0f0f0;
+  cursor: pointer;
+}
+
+.demo-form-element:hover {
+  background-color: #f0f0f0;
+}
+
+.demo-form-element-disabled {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.demo-form-element-disabled:hover {
+  color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+.demo-form-element-selected {
+  background: linear-gradient(white, white) padding-box,
+    linear-gradient(to right, darkblue, darkorchid) border-box;
+  border-radius: 15px;
+  border: 2px solid transparent;
+}
+
+.demo-form-input {
+  border-radius: 15px;
+}
+
+.demo-form input:focus {
+  background: linear-gradient(white, white) padding-box,
+    linear-gradient(to right, darkblue, darkorchid) border-box;
+  border: 2px solid transparent;
+}
+
+.demo-form-button {
+  background-image: linear-gradient(to right, #4776E6 0%, var(--vh-secondary) 51%, #4776E6 100%);
+  padding: 15px 45px;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 30px;
+  display: block;
+}
+
+.demo-form-button:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+}
+
+.demo-form-separator {
+  color: #bababa;
+  margin-top: 15px;
+  padding-bottom: 15px;
+}
