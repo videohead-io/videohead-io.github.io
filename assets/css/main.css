@@ -346,6 +346,10 @@ video {
   padding: 8px;
 }
 
+.dropdown-item {
+  padding: 0.75rem;
+}
+
 .dropdown:hover>.dropdown-menu {
   display: block;
 }
