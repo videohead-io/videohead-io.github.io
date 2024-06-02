@@ -8,8 +8,6 @@ function reveal() {
 
     if (elementTop < windowHeight - elementVisible) {
       reveals[i].classList.add("reveal-active");
-    } else {
-      reveals[i].classList.remove("reveal-active");
     }
   }
 }
