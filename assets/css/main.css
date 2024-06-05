@@ -357,3 +357,7 @@ video {
 .dropdown>.dropdown-toggle:active {
   pointer-events: none;
 }
+
+.dropdown-item:active {
+  background-color: var(--vh-secondary);
+}
