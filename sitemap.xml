@@ -5,6 +5,11 @@
         <priority>1.00</priority>
     </url>
     <url>
+        <loc>https://videohead.io/portfolio-videos/</loc>
+        <lastmod>2024-06-07T15:07:40+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
         <loc>https://videohead.io/product-videos/</loc>
         <lastmod>2024-05-28T15:07:40+00:00</lastmod>
         <priority>0.80</priority>
