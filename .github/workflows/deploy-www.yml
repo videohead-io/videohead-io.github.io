@@ -30,10 +30,14 @@ jobs:
         uses: actions/checkout@v4
       - name: Setup Pages
         uses: actions/configure-pages@v5
+      - name: Copy main site content (excluding blog)
+        run: |
+          mkdir temp-site
+          rsync -av --progress ./ ./temp-site --exclude blog
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
         with:
-          source: ./
+          source: ./temp-site
           destination: ./_site
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
