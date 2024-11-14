@@ -1,0 +1,15 @@
+---
+import { Image } from "astro:assets";
+import logoImage from "@/images/logo.svg";
+import darkLogo from "@/images/logo-dark.svg";
+---
+
+<div class='flex justify-start items-center gap-2 title'>
+	<a class="w-80 dark:hidden" href="/">
+		<Image src={logoImage} alt="Videohead Logo" />
+	  </a>
+
+	  <a class="hidden w-80 dark:block" href="/">
+		<Image src={darkLogo} alt="Videohead Logo" />
+	  </a>
+</div>
