@@ -29,7 +29,7 @@ const publishedPosts = posts.filter(post => post.data.draft === false)
 							/>
 						</div>
 						<header class='flex'>
-							<a class='font-medium hover:underline' href={`/post/${post.slug}/`}>
+							<a class='font-medium hover:underline' href={`${Astro.site}/post/${post.slug}/`}>
 								{post.data.title}
 							</a>
 						</header>
