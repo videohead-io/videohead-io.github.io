@@ -6,7 +6,7 @@ import { remarkReadingTime } from './src/utils/readTime.ts'
 
 // https://astro.build/config
 export default defineConfig({
-	site: 'https://videohead.io',
+	site: 'https://videohead.io/blog',
 	base: '/blog',
 	markdown: {
 		remarkPlugins: [remarkReadingTime],
