@@ -4,9 +4,11 @@ import sitemap from '@astrojs/sitemap'
 import tailwind from '@astrojs/tailwind'
 import { remarkReadingTime } from './src/utils/readTime.ts'
 
+const site = process.env.NODE_ENV === 'development' ? 'http://localhost:4321/blog' : 'https://videohead.io/blog'
+
 // https://astro.build/config
 export default defineConfig({
-	site: 'https://videohead.io/blog',
+	site,
 	base: 'blog',
 	markdown: {
 		remarkPlugins: [remarkReadingTime],
