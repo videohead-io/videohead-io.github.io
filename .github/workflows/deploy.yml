@@ -46,7 +46,6 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: 'pnpm'
 
       - name: Build blog with Astro
         run: |
@@ -54,8 +53,8 @@ jobs:
           pnpm install
           pnpm build
           cd ..
-          mkdir -p output/blog
-          cp -r blog/dist/* output/blog/
+          sudo mkdir -p output/blog
+          sudo cp -r blog/dist/* output/blog/
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
